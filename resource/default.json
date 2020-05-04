@@ -1,0 +1,11 @@
+{
+    "app_name": "workflow-ol",
+    "jwt" : {
+        "secret_key" : "secret_key",
+        "expiration_time" : 1371720939,
+        "issuer" : "workflow-ol",
+        "audience" : "client",
+        "algorithm" : "HS256",
+        "scheme" : "Bearer"
+    }
+}
