@@ -14,14 +14,6 @@ app = Flask(__name__)
 
 app.register_blueprint(routes)
 
-@app.errorhandler(Exception)
-def error_handler(e):
-    return jsonify({
-        'error_id' : 500,
-        'developer_text': 'Internal Server Error!',
-        'message' : 'Internal Server Error!'
-    }), 500
-
 
 if __name__ == '__main__':
     LOGGER.info('Application "%s" about to bootstrap', config.get('app_name1'))
